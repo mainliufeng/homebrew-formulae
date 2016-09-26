@@ -1,5 +1,5 @@
 class Termtile < Formula
-  desc "termtile is a set of scripts, which set you free from your mouse and touchpad. Don't distract yourself and manage all your terminal windows with a handful of commands."
+  desc "Terminal window manager for OS X"
   homepage "https://github.com/apaszke/termtile"
   head "https://github.com/apaszke/termtile.git"
 

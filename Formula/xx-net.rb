@@ -1,5 +1,5 @@
 class XxNet < Formula
-  desc "XX-Net is a free desktop application that delivers fast, reliable and secure access to the open Internet for users in censored regions. It uses google app engine (GAE) as a proxy server through the firewall."
+  desc "a web proxy tool"
   homepage "https://github.com/XX-net/XX-Net"
   url "https://codeload.github.com/XX-net/XX-Net/zip/3.1.19"
   version "3.1.19"
