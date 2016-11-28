@@ -9,4 +9,14 @@ class PinyinCompletion < Formula
     system "python", *Language::Python.setup_install_args(prefix)
     libexec.install Dir["*"]
   end
+
+  def caveats
+    <<-EOS.undent
+    bash:
+      source /usr/local/opt/pinyin-completion/libexec/shell/pinyin-comp.bash
+    zsh:
+      source /usr/local/opt/pinyin-completion/libexec/shell/pinyin-comp.zsh
+    EOS
+  end
+
 end
