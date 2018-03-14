@@ -3,10 +3,10 @@ class PinyinCompletion < Formula
   homepage "https://github.com/petronny/pinyin-completion"
   head "https://github.com/petronny/pinyin-completion.git"
 
-  depends_on :python
+  depends_on "python@2"
 
   def install
-    system "python", *Language::Python.setup_install_args(prefix)
+    system "python2", *Language::Python.setup_install_args(prefix)
     libexec.install Dir["*"]
   end
 
