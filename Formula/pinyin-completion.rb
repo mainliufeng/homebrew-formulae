@@ -11,7 +11,7 @@ class PinyinCompletion < Formula
   end
 
   def caveats
-    <<-EOS.undent
+    <<~EOS
     bash:
       source /usr/local/opt/pinyin-completion/libexec/shell/pinyin-comp.bash
     zsh:
