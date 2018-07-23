@@ -7,7 +7,7 @@ class Termtile < Formula
     libexec.install Dir["*"]
     system "cd #{libexec} && printf 'iTerm2\\n.\\nn\\n' | ./install.sh"
     system "cd #{libexec} && /usr/bin/cc -framework AppKit -o getScreenInfo src/getScreenInfo.m"
-    (bin/"m").write <<-EOS.undent
+    (bin/"m").write <<~EOS
       #!/bin/bash
       osascript #{libexec/'maximize.scpt'};clear;
     EOS
